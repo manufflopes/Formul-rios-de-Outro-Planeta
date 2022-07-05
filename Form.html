@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formularios de Outro Planeta</title>
+    </head>
+    <body>
+        <header>
+            <h2>Formulários</h2>
+            <p>
+                <strong>Para que serve ?</strong>  <br />- Capturar dados de entrada (input)
+                <br />- Interação <br />- Controle
+            </p>
+            <p>Pré requisitos <br />- Basico HTML</p>
+            <p>
+                Dominar <br />-- Estilização <br />-- Validação <br />-- Controles
+                customizados <br />-- JavaScripit
+            </p>
+        </header>
+        <main>
+            <h3>Form</h3>
+            <p>
+                -- Elemento que definirá um formulário <br />-- É um container
+                estilo, diferente do section e footer
+            </p>
+            <h4>Atributos básicos</h4>
+            <p>
+                -- action --> para onde estes dados serão submetidos
+                <br />-- method --> post (pega os mesmo dados e não aparece na
+                url, esconde os dados) e get (enviar dados e são exibidos na
+                url) <br />-- Não podemos criar Form dentro de outro Form.
+            </p>
+            <!-- <form action="" method="">
+            </form> -->
+            <h3>Fieldset Legend</h3>
+            <p>
+                -- agrupamento de campos <br>-- mesmo propósito <br>-- semântico <br>-- acessibilidade
+            </p>
+            <h4>Atributos especiais</h4>
+            <p>
+            <strong>- Disabbled</strong>  <br>  --desabilita todos os elementos internos <br>-- não serão enviados ao submeter o formulário <br>
+            
+            <strong>- Form</strong> <br>-- o id de um formulário ao qual esse fieldset pertence <br>-- não precisa estar dentro do formulário <br>
+           
+            <strong>- Name</strong><br>- nome do grupo <br>
+            
+            <strong>- Legend</strong>  <br>-- nome do agrupamento <br>-- primeiro elemento dentro do fieldset
+          
+            </p>
+            <form id="contato"action="">
+                <button>Enviar</button>
+            </form>
+            <fieldset form="contato"name="inputs-contact">
+                <legend>Contato</legend>
+                <label for="">Nome</label>
+                <input type="text">
+            </fieldset>
+            <h4>Label</h4>           
+            <p>
+                -- Associar e identificar uma (ou mais) tag de entrada de dados <br>-- Acessibilidade <br>-- Você poderá clicar para mudar o foco da entrada de dados
+            </p>
+            <h4>Atributos</h4>
+            <p>
+                -- For <br>  -- Para fazer a conexão entre este label e a tag de entrada de dados <br> -- É feita via id do input <br> -- Só funciona com elementos específicos <br> -- Button, input (not hiden), meter, output, progress, select, textarea  
+            </p>
+            <label for="">
+                Nome Completo:
+                <input type="text">
+            </label>
+            <p><br>********************<br></p>
+            <label for="nome">
+                Nome Completo:
+            </label>
+            <input id="nome" type="text">
+            <h4>Button</h4>
+            <p>-- representa um botão <br>-- usado para enviar formulários <br>-- é estilizado pelo user agent</p>
+            <h4>Atributos comuns</h4>
+            <p>
+                - type <br>--submit <br>--reset <br>-- button <br>- autofocus <br>- disabled <br>- name <br>- value <br>- form
+            </p>
+            <p><br>*********************<br></p>
+            <form action="">
+                <input type="text" value="" >
+                <button type="submit">Limpar</button>
+            </form> 
+            <h3>Datalist</h3>
+            <p>
+                - Lista de valores como sugestão a uma tag (input) <br>- Valores sugestivos e não obrigatórios <br>- Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão <br>
+            
+                <strong>#list</strong><br>- recebe como valor o id de um datalist residente no mesmo documento <br>
+            
+                <strong># Tipos de input suportados</strong><br>- text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color <br>* valores que não são compativeis com o tipo de input não serão apresentados <br><p></p><strong># Tipos de input não suportados (conforme especificação)</strong><br>- hidden, password, checkbox, radio, file, ou qualquer tipo de button 
+            
+            <p></p>
+            <input 
+                type="text"
+                list="fruitsdata"
+                placeholder="Escolha uma fruta"
+            />
+            <datalist id="fruitsdata">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Manga</option>
+                <option>Laranja</option>
+                <option>Cereja</option>
+            </datalist>
+            <h3>Input</h3>
+            <p>
+                - um dos mais usados em formulários <br>- aceita os mais diversos tipos de dados <br>- um dos mais poderosos e complexos <br>- elevado número de combinações
+            </p>
+            <h4>Atributos</h4>
+            <p>- type <br>- name <br>- id</p>
+            <p><br>*******************<br></p>
+            <p></p>
+            <br>*file*<br>
+            <input type="file"> <br>
+            <p></p>
+            <br>*date*<br>
+            <input type="date"><br>
+            <p></p>
+            <br>*number*<br>
+            <input type="number"><br>
+            <p></p>
+            <br>*email*<br>
+            <input type="email"><br>
+            <p></p>
+            <br>*password*<br>
+            <input type="password">
+            <h4>Input - Atributos comuns</h4>
+            <p>
+                - autocomplete <br>- autofocus <br>- disabled <br>- readonly (quase todos) <br>- value <br>- form (quase todos) <br>- name <br>- required (quase todos) <br>- placeholder (password, search, tel, text, url) <br>
+            
+            
+                <br>*autocomplete*<br>
+                <input type="type" autocomplete="bday">
+                <p></p>
+                <br>*autofocus*<br>
+                <input type="type" autofocus> 
+                <p></p>
+                <br>*disabled*<br>
+                <input type="type" disabled> 
+                <p></p>
+                <br>*readonly*<br>
+                <input type="type" readonly> 
+                <p></p>
+                <br>*value*<br>
+                <input type="type" value="texto"> 
+                <p></p>
+                <br>*form*<br>
+                <form id="meu-form" action=""></form>
+                <input type="type" form="meu-form"> 
+                <p></p>
+                <br>*name*<br>
+                <form id="meu-form" action=""></form>
+                <input name="email" type="email" form="meu-form">
+                <p></p>  
+                <br>*required*<br>
+                <input type="type" required>  
+                <p></p>
+                <br>*placeholder*<br>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Digite seu e-mail">               
+            </p>
+
+
+        </main>
+    </body>
+</html>
