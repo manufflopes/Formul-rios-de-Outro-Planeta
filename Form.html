@@ -72,7 +72,8 @@
             - Só funciona com elementos específicos <br />
             - Button, input (not hiden), meter, output, progress, select,
             textarea <br />
-            <p></p>
+            <br />
+            <br />
 
             <label for="">
                 Nome Completo:
@@ -110,14 +111,16 @@
             range e color <br />* valores que não são compativeis com o tipo de
             input não serão apresentados
             <br />
-            <p></p>
+            <br />
+            <br />
             <strong
                 ># Tipos de input não suportados (conforme
                 especificação)</strong
             ><br />- hidden, password, checkbox, radio, file, ou qualquer tipo
             de button
 
-            <p></p>
+            <br />
+            <br />
             <input
                 type="text"
                 list="fruitsdata"
@@ -142,16 +145,20 @@
 
             <br />*file*<br /><br />
             <input type="file" /> <br />
-            <p></p>
+            <br />
+            <br />
             <br />*date*<br /><br />
             <input type="date" /><br />
-            <p></p>
+            <br />
+            <br />
             <br />*number*<br /><br />
             <input type="number" /><br />
-            <p></p>
+            <br />
+            <br />
             <br />*email*<br /><br />
             <input type="email" /><br />
-            <p></p>
+            <br />
+            <br />
             <br />*password*<br /><br />
             <input type="password" />
             <h4>Input - Atributos comuns</h4>
@@ -161,30 +168,38 @@
             search, tel, text, url) <br />
             <br />*autocomplete*<br /><br />
             <input type="type" autocomplete="bday" />
-            <p></p>
+            <br />
+            <br />
             <br />*autofocus*<br /><br />
             <input type="type" autofocus />
-            <p></p>
+            <br />
+            <br />
             <br />*disabled*<br /><br />
             <input type="type" disabled />
-            <p></p>
+            <br />
+            <br />
             <br />*readonly*<br /><br />
             <input type="type" readonly />
-            <p></p>
+            <br />
+            <br />
             <br />*value*<br /><br />
             <input type="type" value="texto" />
-            <p></p>
+            <br />
+            <br />
             <br />*form*<br /><br />
             <form id="meu-form" action=""></form>
             <input type="type" form="meu-form" />
-            <p></p>
+            <br />
+            <br />
             <br />*name*<br /><br />
             <form id="meu-form" action=""></form>
             <input name="email" type="email" form="meu-form" />
-            <p></p>
+            <br />
+            <br />
             <br />*required*<br /><br />
             <input type="type" required />
-            <p></p>
+            <br />
+            <br />
             <br />*placeholder*<br /><br />
             <label for="email">Email</label>
             <input id="email" type="email" placeholder="Digite seu e-mail" />
@@ -264,11 +279,13 @@
             definidos a fim de sugerir ao usuário, quais valores estão
             disponíveis <br />* os valores do datalist que não forem compatíveis
             com o campo, não serao apresentados como sugestão
-            <p></p>
+            <br />
+            <br />
             <form action="">
                 <datalist id="emailslist">
                     <option>mayk@rocketseat.com.br</option>
                 </datalist>
+                <label for="">Email</label> <br />
                 <input
                     type="email"
                     multiple
@@ -303,7 +320,8 @@
             com o campo, não serão apresentados como sugestão <br />
             <strong>spellcheck</strong> <br />* habilitar a verificação
             ortografica para este input
-            <p></p>
+            <br />
+            <br />
             <form action="">
                 <datalist id="urlsdata">
                     <option>http://meusite.com.br</option>
@@ -337,7 +355,8 @@
             <h4># Envio de arquivos</h4>
             Para envio dos arquivos o formulário deverá utilizar o método POST e
             o atributo enctype como "multipart/form-data" <br />
-            <p></p>
+            <br />
+            <br />
             <form action="" method="post" enctype="multipart/form-data">
                 <input type="file" />
             </form>
@@ -350,7 +369,8 @@
             mesmo documento <br />* datalist irá conter uma lista de valores pré
             definidos a fim de orientação<br />* os valores do datalist que não
             forem compativeis com o campo
-            <p></p>
+            <br />
+            <br />
             <datalist id="colorsdata">
                 <option value="">#0000ff</option>
                 <option value="">#00ff00</option>
@@ -366,14 +386,17 @@
             <br />* se não estiver presente, o padrao é "on" <br />
             <strong>- checked</strong><br />* para deixar o campo marcado por
             padrão <br />
-            <p></p>
+            <br />
+            <br />
             <label for="subscribe"> Receber notificações</label>
             <input type="checkbox" name="subscribe" id="subscribe" checked />
-            <p></p>
+            <br />
+            <br />
             <h4>Marcar multiplos valores ??</h4>
             - Usarenmos o atributo 'name' com o mesmo nome para os diversos
             campos
-            <p></p>
+            <br />
+            <br />
             <fieldset>
                 <legend>Choose your interests</legend>
                 <div>
@@ -396,11 +419,13 @@
                     <label for="music">Music</label>
                 </div>
             </fieldset>
-            <p></p>
+            <br />
+            <br />
             <h3>Input type = hidden</h3>
             - invisivel ao usuário <br />- será enviado com o formulário <br />-
             não receberá foco <br />- leitores de campo não percebem esse campo
-            <p></p>
+            <br />
+            <br />
             <input
                 type="hidden"
                 id="timestamp"
@@ -413,7 +438,8 @@
             <strong>- checked</strong><br />* indica que o campo foi marcado
             <br />
             <strong>- value</strong><br />*valor que aquele campo contém <br />
-            <p></p>
+            <br />
+            <br />
             <fieldset>
                 <legend>Bora tomar um café ?? ;)</legend>
                 <label for="yep">Simmm</label>
@@ -433,7 +459,8 @@
                     value="no"
                 />
             </fieldset>
-            <p></p>
+            <br />
+            <br />
             <h3>Textarea</h3>
             - mais de uma linha <br />- util para textos grandes
             <h4># Atributos</h4>
@@ -441,9 +468,11 @@
             <br />- wrap <br /><strong>outros comuns aos inputs</strong><br />
             - autocomplete, autofocus, disabled, placeholder, readonly, form,
             required <br />
-            <p></p>
+            <br />
+            <br />
             <label for="message">Questão de prova</label>
-            <p></p>
+            <br />
+            <br />
             <textarea
                 id="message"
                 name="message"
@@ -464,9 +493,11 @@
             <h4># Atributos</h4>
             <strong>- multiple</strong> <br />* habilita multiplas opções <br />
             <strong>- size</strong><br />* quando opções visiveis ? <br />
-            <p></p>
+            <br />
+            <br />
             <label for="carselect">Qual o modelo do carro?</label>
-            <p></p>
+            <br />
+            <br />
             <select name="carmodel" id="carselect" multiple size="4">
                 <option value="fiat">Fiat - Uno</option>
                 <option value="citroen">Citroen - C3</option>
@@ -480,7 +511,8 @@
             <h3>Optgroup</h3>
             <label for=""
                 >Please choose one or more pets:
-                <p></p>
+                <br />
+                <br />
                 <select name="pets" id="" multiple size="4">
                     <optgroup label="Legged pets">
                         <option value="dog">Dog</option>
@@ -503,7 +535,8 @@
             - pattern ---> terá uma expressão regular, ou seja, uma estrutura de
             textos que fará uma busca por semelhança<br />
             - aria-label <br />
-            <p></p>
+            <br />
+            <br />
             <p>Primeira opção</p>
 
             <datalist id="searchterms">
@@ -540,23 +573,119 @@
             <h4># Atributos</h4>
             - min/ max <br />
             - step <br />
-            <p></p>
+            <br />
+            <br />
             <form action="">
                 <input
                     type="number"
                     min="2"
-                    max="4"
+                    max="40"
                     step="3"
                     placeholder="Digite somente números"
+                    size="15"
                 />
-                <button>Enviar</button>
-                <h3>Input type = range</h3>
-                - controle para selecionar um valor numérico <br />- slider ou
-                dial control
-                <h4># Atributos</h4>
-                - min / max <br />- step <br />
-                <p></p>
-                <input type="range" min="0" max="20" step="5" />
+            </form>
+            <button>Enviar</button>
+            <br />
+            <br />
+            <h3>Input type = range</h3>
+            - controle para selecionar um valor numérico <br />- slider ou dial
+            control
+            <h4># Atributos</h4>
+            - min / max <br />- step <br />
+            <br />
+            <br />
+            <input type="range" min="0" max="20" step="5" />
+            <h3>Input type = data e hora</h3>
+            - outros campos iteressantes, mas que ainda não tem um ótimo suporte
+            <br />- fique de olho em www.caniuse.com
+            <br />
+            <br />
+            <input type="date" value="yyyy-mm-dd" />
+            <br />
+            <br />
+            <input type="datetime-local" />
+            <br />
+            <br />
+            <input type="month" />
+            <br />
+            <br />
+            <input type="time" />
+            <br />
+            <br />
+            <input type="week" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />*******************************************************<br />
+            <h1>Criando um Formulário</h1>
+            <h4>Desenhando</h4>
+            - Pensar no requisitos <br />
+            - Ajuda a definir as necessidades
+            <h4>Dicas:</h4>
+            - Simples e focado <br />
+            - Somente dados necessários <br />
+            - Verifique o que te agrada
+            <br />
+            <br />
+            <h2>Formulário de Contato</h2>
+            1.o formulário deverá conter um título de nome Contato. Usar
+            fieldset e legend para essa finalidade. <br />
+            2. o formulário deverá conter 3 campos: <br />
+            a. nome (input texto) <br />
+            b. e-mail (input email) <br />
+            c. mensagem (textarea) <br />
+            3. o formulário deverá conter um botão para enviar. <br />
+            <strong>Atenção:</strong> o formulário deverá conter regras de
+            acessibilidade como label, place holder, por exemplo.
+            <br />
+            <br />
+            <form id="contato">
+                <fieldset form="contato">
+                    <legend>Contato</legend>
+
+                    <label for="name"><strong>Nome</strong></label> <br />
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Digite seu nome completo"
+                        minlength="8"
+                        maxlength="100"
+                        size="80"
+                    />
+                    <br />
+                    <br />
+                    <label for="email"> <strong>Email</strong></label
+                    ><br />
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        multiple
+                        minlength="8"
+                        maxlength="100"
+                        size="80"
+                        placeholder="Digite seu e-mail"
+                    />
+                    <br />
+                    <br />
+                    <label for="message"><strong>Mensagem</strong></label>
+                    <br />
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="30"
+                        maxlength="120"
+                        minlength="20"
+                        placeholder="Deixe sua mensagem"
+                    ></textarea>
+                    <br />
+                    <br />
+                    <button>Enviar</button>
+                </fieldset>
             </form>
         </main>
     </body>
