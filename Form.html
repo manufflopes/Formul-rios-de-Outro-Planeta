@@ -8,93 +8,117 @@
     </head>
     <body>
         <header>
-            <h2>Formulários</h2>
-            <p>
-                <strong>Para que serve ?</strong>  <br />- Capturar dados de entrada (input)
-                <br />- Interação <br />- Controle
-            </p>
-            <p>Pré requisitos <br />- Basico HTML</p>
-            <p>
-                Dominar <br />-- Estilização <br />-- Validação <br />-- Controles
-                customizados <br />-- JavaScripit
-            </p>
+            <h1>Formulários</h1>
+            <strong>Para que serve ?</strong> <br />- Capturar dados de entrada
+            (input) <br />- Interação <br />- Controle <br />
+            <strong>Pré requisitos</strong> <br />- Basico HTML <br />
+            <strong>Dominar</strong> <br />- Estilização <br />- Validação
+            <br />- Controles customizados <br />- JavaScripit
         </header>
         <main>
-            <h3>Form</h3>
-            <p>
-                -- Elemento que definirá um formulário <br />-- É um container
-                estilo, diferente do section e footer
-            </p>
-            <h4>Atributos básicos</h4>
-            <p>
-                -- action --> para onde estes dados serão submetidos
-                <br />-- method --> post (pega os mesmo dados e não aparece na
-                url, esconde os dados) e get (enviar dados e são exibidos na
-                url) <br />-- Não podemos criar Form dentro de outro Form.
-            </p>
+            <h2>Form</h2>
+
+            - Elemento que definirá um formulário <br />- É um container estilo,
+            diferente do section e footer
+
+            <h3>Atributos básicos</h3>
+
+            - action -> para onde estes dados serão submetidos
+            <br />- method -> post (pega os mesmo dados e não aparece na url,
+            esconde os dados) e get (enviar dados e são exibidos na url) <br />-
+            Não podemos criar Form dentro de outro Form.
+
             <!-- <form action="" method="">
             </form> -->
             <h3>Fieldset Legend</h3>
-            <p>
-                -- agrupamento de campos <br>-- mesmo propósito <br>-- semântico <br>-- acessibilidade
-            </p>
-            <h4>Atributos especiais</h4>
-            <p>
-            <strong>- Disabbled</strong>  <br>  --desabilita todos os elementos internos <br>-- não serão enviados ao submeter o formulário <br>
-            
-            <strong>- Form</strong> <br>-- o id de um formulário ao qual esse fieldset pertence <br>-- não precisa estar dentro do formulário <br>
-           
-            <strong>- Name</strong><br>- nome do grupo <br>
-            
-            <strong>- Legend</strong>  <br>-- nome do agrupamento <br>-- primeiro elemento dentro do fieldset
-          
-            </p>
-            <form id="contato"action="">
+            - agrupamento de campos <br />- mesmo propósito <br />- semântico
+            <br />- acessibilidade
+
+            <h3>Atributos especiais</h3>
+
+            <strong>- Disabbled</strong> <br />
+            -desabilita todos os elementos internos <br />- não serão enviados
+            ao submeter o formulário <br />
+
+            <strong>- Form</strong> <br />- o id de um formulário ao qual esse
+            fieldset pertence <br />- não precisa estar dentro do formulário
+            <br />
+
+            <strong>- Name</strong><br />- nome do grupo <br />
+
+            <strong>- Legend</strong> <br />- nome do agrupamento <br />-
+            primeiro elemento dentro do fieldset
+
+            <form id="contato" action="">
                 <button>Enviar</button>
             </form>
-            <fieldset form="contato"name="inputs-contact">
+            <fieldset form="contato" name="inputs-contact">
                 <legend>Contato</legend>
                 <label for="">Nome</label>
-                <input type="text">
+                <input type="text" />
             </fieldset>
-            <h4>Label</h4>           
-            <p>
-                -- Associar e identificar uma (ou mais) tag de entrada de dados <br>-- Acessibilidade <br>-- Você poderá clicar para mudar o foco da entrada de dados
-            </p>
+            <h4>Label</h4>
+
+            - Associar e identificar uma (ou mais) tag de entrada de dados
+            <br />- Acessibilidade <br />- Você poderá clicar para mudar o foco
+            da entrada de dados
+
             <h4>Atributos</h4>
-            <p>
-                -- For <br>  -- Para fazer a conexão entre este label e a tag de entrada de dados <br> -- É feita via id do input <br> -- Só funciona com elementos específicos <br> -- Button, input (not hiden), meter, output, progress, select, textarea  
-            </p>
+
+            - For <br />
+            - Para fazer a conexão entre este label e a tag de entrada de dados
+            <br />
+            - É feita via id do input <br />
+            - Só funciona com elementos específicos <br />
+            - Button, input (not hiden), meter, output, progress, select,
+            textarea <br />
+            <p></p>
+
             <label for="">
                 Nome Completo:
-                <input type="text">
+                <input type="text" />
             </label>
-            <p><br>********************<br></p>
-            <label for="nome">
-                Nome Completo:
-            </label>
-            <input id="nome" type="text">
+            <br />********************<br />
+            <label for="nome"> Nome Completo: </label>
+            <input id="nome" type="text" />
             <h4>Button</h4>
-            <p>-- representa um botão <br>-- usado para enviar formulários <br>-- é estilizado pelo user agent</p>
+
+            - representa um botão <br />- usado para enviar formulários <br />-
+            é estilizado pelo user agent
+
             <h4>Atributos comuns</h4>
-            <p>
-                - type <br>--submit <br>--reset <br>-- button <br>- autofocus <br>- disabled <br>- name <br>- value <br>- form
-            </p>
-            <p><br>*********************<br></p>
+
+            - type <br />- submit <br />- reset <br />- button <br />- autofocus
+            <br />- disabled <br />- name <br />- value <br />- form
+
+            <p><br />*********************<br /></p>
             <form action="">
-                <input type="text" value="" >
+                <input type="text" value="" />
                 <button type="submit">Limpar</button>
-            </form> 
+            </form>
             <h3>Datalist</h3>
-            <p>
-                - Lista de valores como sugestão a uma tag (input) <br>- Valores sugestivos e não obrigatórios <br>- Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão <br>
-            
-                <strong>#list</strong><br>- recebe como valor o id de um datalist residente no mesmo documento <br>
-            
-                <strong># Tipos de input suportados</strong><br>- text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color <br>* valores que não são compativeis com o tipo de input não serão apresentados <br><p></p><strong># Tipos de input não suportados (conforme especificação)</strong><br>- hidden, password, checkbox, radio, file, ou qualquer tipo de button 
-            
+
+            - Lista de valores como sugestão a uma tag (input) <br />- Valores
+            sugestivos e não obrigatórios <br />- Usuários poderão selecionar um
+            dos valores, ou colocar um valor diferente da sugestão <br />
+
+            <strong>#list</strong><br />- recebe como valor o id de um datalist
+            residente no mesmo documento <br />
+
+            <strong># Tipos de input suportados</strong><br />- text, search,
+            url, tel, email, date, month, week, time, datetime-local, number,
+            range e color <br />* valores que não são compativeis com o tipo de
+            input não serão apresentados
+            <br />
             <p></p>
-            <input 
+            <strong
+                ># Tipos de input não suportados (conforme
+                especificação)</strong
+            ><br />- hidden, password, checkbox, radio, file, ou qualquer tipo
+            de button
+
+            <p></p>
+            <input
                 type="text"
                 list="fruitsdata"
                 placeholder="Escolha uma fruta"
@@ -106,65 +130,434 @@
                 <option>Laranja</option>
                 <option>Cereja</option>
             </datalist>
-            <h3>Input</h3>
-            <p>
-                - um dos mais usados em formulários <br>- aceita os mais diversos tipos de dados <br>- um dos mais poderosos e complexos <br>- elevado número de combinações
-            </p>
-            <h4>Atributos</h4>
-            <p>- type <br>- name <br>- id</p>
-            <p><br>*******************<br></p>
+            <h2>Input</h2>
+
+            - um dos mais usados em formulários <br />- aceita os mais diversos
+            tipos de dados <br />- um dos mais poderosos e complexos <br />-
+            elevado número de combinações
+
+            <h3>Atributos</h3>
+            - type <br />- name <br />- id
+            <p><br />*******************<br /></p>
+
+            <br />*file*<br /><br />
+            <input type="file" /> <br />
             <p></p>
-            <br>*file*<br>
-            <input type="file"> <br>
+            <br />*date*<br /><br />
+            <input type="date" /><br />
             <p></p>
-            <br>*date*<br>
-            <input type="date"><br>
+            <br />*number*<br /><br />
+            <input type="number" /><br />
             <p></p>
-            <br>*number*<br>
-            <input type="number"><br>
+            <br />*email*<br /><br />
+            <input type="email" /><br />
             <p></p>
-            <br>*email*<br>
-            <input type="email"><br>
-            <p></p>
-            <br>*password*<br>
-            <input type="password">
+            <br />*password*<br /><br />
+            <input type="password" />
             <h4>Input - Atributos comuns</h4>
-            <p>
-                - autocomplete <br>- autofocus <br>- disabled <br>- readonly (quase todos) <br>- value <br>- form (quase todos) <br>- name <br>- required (quase todos) <br>- placeholder (password, search, tel, text, url) <br>
-            
-            
-                <br>*autocomplete*<br>
-                <input type="type" autocomplete="bday">
-                <p></p>
-                <br>*autofocus*<br>
-                <input type="type" autofocus> 
-                <p></p>
-                <br>*disabled*<br>
-                <input type="type" disabled> 
-                <p></p>
-                <br>*readonly*<br>
-                <input type="type" readonly> 
-                <p></p>
-                <br>*value*<br>
-                <input type="type" value="texto"> 
-                <p></p>
-                <br>*form*<br>
-                <form id="meu-form" action=""></form>
-                <input type="type" form="meu-form"> 
-                <p></p>
-                <br>*name*<br>
-                <form id="meu-form" action=""></form>
-                <input name="email" type="email" form="meu-form">
-                <p></p>  
-                <br>*required*<br>
-                <input type="type" required>  
-                <p></p>
-                <br>*placeholder*<br>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Digite seu e-mail">               
-            </p>
+            - autocomplete <br />- autofocus <br />- disabled <br />- readonly
+            (quase todos) <br />- value <br />- form (quase todos) <br />- name
+            <br />- required (quase todos) <br />- placeholder (password,
+            search, tel, text, url) <br />
+            <br />*autocomplete*<br /><br />
+            <input type="type" autocomplete="bday" />
+            <p></p>
+            <br />*autofocus*<br /><br />
+            <input type="type" autofocus />
+            <p></p>
+            <br />*disabled*<br /><br />
+            <input type="type" disabled />
+            <p></p>
+            <br />*readonly*<br /><br />
+            <input type="type" readonly />
+            <p></p>
+            <br />*value*<br /><br />
+            <input type="type" value="texto" />
+            <p></p>
+            <br />*form*<br /><br />
+            <form id="meu-form" action=""></form>
+            <input type="type" form="meu-form" />
+            <p></p>
+            <br />*name*<br /><br />
+            <form id="meu-form" action=""></form>
+            <input name="email" type="email" form="meu-form" />
+            <p></p>
+            <br />*required*<br /><br />
+            <input type="type" required />
+            <p></p>
+            <br />*placeholder*<br /><br />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Digite seu e-mail" />
 
+            <h3><strong>Input type = Password</strong></h3>
+            <br />
+            - colocar uma senha de maneira segura <br />- esconde o que está
+            sendo digitado no campo <br />- o estilo da apresentação do campo,
+            depende do User Agent
 
+            <h4># Atributos</h4>
+            <strong>- Minlength / Maxlength</strong>
+            <br />* o número mínimo e/ou maximo de caracteres para este campo
+            <br />
+            <strong>- Size</strong>
+            <br />* o número aceitavel de caracteres que esse campo deverá
+            conter <br />
+            <strong>- Pattern</strong>
+            <br />* expressão regular para validar o que está sendo digitado no
+            campo <br />* altamente recomendado o uso de um padrão de segurança
+            alta de senhas <br />*exemplo: queremos que a senha contenha
+            caracteres hexadecimais (0 a 9, de A a F) com o limite de no mínimo
+            4 e no máximo 8 caracteres <br />* pattern="[0-9a-fa-F]{4,8}" <br />
+            <strong>- Placeholder</strong>
+            <br />* mostra um exemplo de texto a ser digitado no campo
+            <br />
+            <strong>- Readonly / Disabled </strong>
+            <br />* atributo booleano indicando se o campo está habilitado ou
+            não <br />
+            <strong>- Required</strong>
+            <br />* o campo será obrigatório <br />
+            <strong>- Inputmode</strong>
+            <br />* poderá alterar o uso do teclado em smartphones <br />*
+            exemplo: queremos que o cliente só adicione números. <br />*
+            Inputmode="numeric" <br />
+            <strong>- Autocomplete</strong>
+            <br />* On: permite a sugestão de: new-password ou current-password
+            <br />* Off: desabilita a opção de autocompletar <br />*
+            New-password: o navegador poderá sugerir uma nova senha
+
+            <form action="">
+                <input
+                    type="password"
+                    required
+                    minlength="4"
+                    maxlength="8"
+                    size="15"
+                    pattern="[0-9a-fa-F]{4,8}"
+                    tittle="Coloque HEX >=4 e >=8 caracteres"
+                    placeholder="Coloque sua senha ;)"
+                />
+                <button type="submit">Enviar</button>
+            </form>
+            <h3><strong>Input type = Email</strong></h3>
+            - espera que o usuário digite um e-mail <br />- irá validar se o
+            valor digitado é um email
+
+            <h4><strong># Atributos</strong></h4>
+
+            <strong>- placeholder </strong><br />
+            <strong>- readonly/ disabled</strong><br />
+            <strong>- value </strong><br />
+            <strong>- required</strong><br />
+            <strong>- multiple</strong><br />* o campo irá receber 1 ou mais
+            emails, separado por virgulas <br />
+            <strong>- minlength / maxlength</strong><br />* o mínimo e/ou máximo
+            valor que o campo irá conter <br />
+            <strong>- size </strong><br />* o valor numérico indicando quantos
+            caracteres esse campo deveria conter, modificando o tamanho do campo
+            para o usuário <br />
+            <strong>- pattern</strong><br />* uso de expressão regular para
+            validar o campo <br />* exemplo: o usuário só poderá colocar e-mail
+            do domínio rocketseat.com.br <br />*
+            pattern=".+@rocketseat\.com\.br" <br />
+            <strong>- list</strong><br />*o id de uma tag datalist que esta no
+            mesmo documento <br />* datalist irá conter uma lita de valores pré
+            definidos a fim de sugerir ao usuário, quais valores estão
+            disponíveis <br />* os valores do datalist que não forem compatíveis
+            com o campo, não serao apresentados como sugestão
+            <p></p>
+            <form action="">
+                <datalist id="emailslist">
+                    <option>mayk@rocketseat.com.br</option>
+                </datalist>
+                <input
+                    type="email"
+                    multiple
+                    minlength="8"
+                    maxlength="100"
+                    size="10"
+                    pattern=".+@rocketseat\.com\.br"
+                    list="emailslist"
+                />
+                <button type="submit">Enviar</button>
+            </form>
+            <h3><strong>Input type= url</strong></h3>
+            - espera que o usuário digite uma url <br />- irá validar se o valor
+            digitado é uma url
+            <h4><strong># Atributos</strong></h4>
+            <strong>- placeholder</strong><br />
+            <strong>- readonly / disabled</strong><br />
+            <strong>- value</strong><br />
+            <strong>- required</strong><br />
+            <strong>- minlength/ maxlength</strong><br />* o mínimo ou máximo
+            valor que o campo irá conter <br />
+            <strong>- size</strong><br />* valor numérico indicando quantos
+            caracteres esse campo deveria conter, modificando o tamanho do campo
+            para o usuário <br />
+            <strong>- pattern</strong><br />* uso de expressão regular para
+            validar o campo <br />* exemplo: o usuário só poderá colocar dominio
+            .com.br <br />---> pattern=".*\.com.br\/.*" <br />
+            <strong>- list</strong><br />*o id de uma tag datalist que está no
+            mesmo documento <br />* datalist irá conter uma lista de valores pré
+            definidos a fim de sugerir ao usuário, quais valores estão
+            disponíveis <br />* os valores do datalist que não forem compativeis
+            com o campo, não serão apresentados como sugestão <br />
+            <strong>spellcheck</strong> <br />* habilitar a verificação
+            ortografica para este input
+            <p></p>
+            <form action="">
+                <datalist id="urlsdata">
+                    <option>http://meusite.com.br</option>
+                    <option>http://meusite.com.br</option>
+                </datalist>
+                <input
+                    type="url"
+                    placeholder="http://example.com"
+                    value="http://example.com"
+                    required
+                    pattern=".*\.com.br.*"
+                    title="Somente dominios .com.br serão aceitos"
+                    list="urlsdata"
+                    spellcheck="true"
+                />
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Input type= file</h3>
+            <br />- usuário poderá escolher 1 ou mais arquivos para enviar no
+            formulário
+            <h4># Atributos</h4>
+            <br />
+            <strong>- value</strong><br />* contém o arquivo a ser enviado
+            <br />
+            <strong>- accept</strong><br />* descreve que tipos de arquivos
+            serão aceitos <br />* exemplo: .doc, .docx, .pdf, audio/*,
+            image/png, .png <br />
+            <strong>- files</strong><br />* a lista de arquivo(s) <br />
+            <strong>- multiple</strong><br />* permite o envio de múltiplos
+            arquivos
+            <h4># Envio de arquivos</h4>
+            Para envio dos arquivos o formulário deverá utilizar o método POST e
+            o atributo enctype como "multipart/form-data" <br />
+            <p></p>
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="file" />
+            </form>
+            <h3>Input type = color</h3>
+            <br />- interface para selecionar cor <br />- color picker
+            <h4># Atributos</h4>
+            <strong>- value: RGB</strong><br />* se invalido o preto será
+            exibido <br />
+            <strong>- list</strong><br />* o id de uma tag datalist que está no
+            mesmo documento <br />* datalist irá conter uma lista de valores pré
+            definidos a fim de orientação<br />* os valores do datalist que não
+            forem compativeis com o campo
+            <p></p>
+            <datalist id="colorsdata">
+                <option value="">#0000ff</option>
+                <option value="">#00ff00</option>
+                <option value="">1244124</option>
+            </datalist>
+            <input type="color" list="colorsdata" />
+            <h3>Input type = checkbox</h3>
+            - caixas que podem ser marcadas <br />- selecionar um valor para ser
+            enviado <br />- se não selecionado, não será enviado nenhum dado
+            <h4># Atributos</h4>
+            <strong>- globais</strong><br />
+            <strong>- value</strong><br />* valor que aquele campo contém
+            <br />* se não estiver presente, o padrao é "on" <br />
+            <strong>- checked</strong><br />* para deixar o campo marcado por
+            padrão <br />
+            <p></p>
+            <label for="subscribe"> Receber notificações</label>
+            <input type="checkbox" name="subscribe" id="subscribe" checked />
+            <p></p>
+            <h4>Marcar multiplos valores ??</h4>
+            - Usarenmos o atributo 'name' com o mesmo nome para os diversos
+            campos
+            <p></p>
+            <fieldset>
+                <legend>Choose your interests</legend>
+                <div>
+                    <input
+                        type="checkbox"
+                        id="music"
+                        name="interest"
+                        value="coding"
+                        checked
+                    />
+                    <label for="coding">Coding</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        id="music"
+                        name="interest"
+                        value="music"
+                    />
+                    <label for="music">Music</label>
+                </div>
+            </fieldset>
+            <p></p>
+            <h3>Input type = hidden</h3>
+            - invisivel ao usuário <br />- será enviado com o formulário <br />-
+            não receberá foco <br />- leitores de campo não percebem esse campo
+            <p></p>
+            <input
+                type="hidden"
+                id="timestamp"
+                name="timestamp"
+                value="1286705410"
+            />
+            <h3>Input type = radio</h3>
+            - projetado para selecionar uma unica opção de um grupo de opções
+            <h4># Atributos essenciais</h4>
+            <strong>- checked</strong><br />* indica que o campo foi marcado
+            <br />
+            <strong>- value</strong><br />*valor que aquele campo contém <br />
+            <p></p>
+            <fieldset>
+                <legend>Bora tomar um café ?? ;)</legend>
+                <label for="yep">Simmm</label>
+                <input
+                    checked
+                    type="radio"
+                    id="yep"
+                    name="coffee"
+                    value="yes"
+                />
+                <label for="nono">Nemmm</label>
+                <input
+                    checked
+                    type="radio"
+                    id="nono"
+                    name="coffee"
+                    value="no"
+                />
+            </fieldset>
+            <p></p>
+            <h3>Textarea</h3>
+            - mais de uma linha <br />- util para textos grandes
+            <h4># Atributos</h4>
+            - id <br />- name <br />- rows e cols <br />- maxlength e minglenth
+            <br />- wrap <br /><strong>outros comuns aos inputs</strong><br />
+            - autocomplete, autofocus, disabled, placeholder, readonly, form,
+            required <br />
+            <p></p>
+            <label for="message">Questão de prova</label>
+            <p></p>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="30"
+                maxlength="150"
+                minlength="20"
+                wrap="hard"
+                placeholder="Digite sua mensagem linda aqui"
+            >
+            </textarea>
+            <button>Enviar Mensagem</button>
+            <h3>Select</h3>
+            - controle que fornece um menu de opções
+            <h3>Option</h3>
+            - contém as opçoes a serem selecionadas <br />- atributos
+            necessários <br />* value
+            <h4># Atributos</h4>
+            <strong>- multiple</strong> <br />* habilita multiplas opções <br />
+            <strong>- size</strong><br />* quando opções visiveis ? <br />
+            <p></p>
+            <label for="carselect">Qual o modelo do carro?</label>
+            <p></p>
+            <select name="carmodel" id="carselect" multiple size="4">
+                <option value="fiat">Fiat - Uno</option>
+                <option value="citroen">Citroen - C3</option>
+                <option value="renault">Renault - 3008</option>
+                <option value="bmw">BMW - X6</option>
+                <option value="audi">Audi - A3</option>
+                <option value="tesla">Tesla - S6</option>
+                <option value="pegeout">Pegeout - 2006</option>
+                <option value="chevrolet">Chevrolet - Agile</option>
+            </select>
+            <h3>Optgroup</h3>
+            <label for=""
+                >Please choose one or more pets:
+                <p></p>
+                <select name="pets" id="" multiple size="4">
+                    <optgroup label="Legged pets">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster" disabled>Hamster</option>
+                    </optgroup>
+                    <optgroup label="Flying pets">
+                        <option value="parrot">Parrot</option>
+                        <option value="macaw">Macaw</option>
+                        <option value="albatross">Albatross</option>
+                    </optgroup>
+                </select>
+            </label>
+            <button>Enviar</button>
+            <h3>Input type = search</h3>
+            - para campos de busca <br />- é igual ao campo do tipo "text" mas
+            poderá ser um pouco diferente dependendo do user agent
+            <h4># Atributos</h4>
+            - list / datalist <br />
+            - pattern ---> terá uma expressão regular, ou seja, uma estrutura de
+            textos que fará uma busca por semelhança<br />
+            - aria-label <br />
+            <p></p>
+            <p>Primeira opção</p>
+
+            <datalist id="searchterms">
+                <option>Mac</option>
+                <option>Windows</option>
+                <option>Linux</option>
+                <option>Amazon</option>
+            </datalist>
+            <form action="">
+                <input
+                    type="search"
+                    name="q"
+                    list="searchterms"
+                    placeholder="Digite seu termo de busca"
+                    size="30"
+                    aria-label="Campo de pesquisa: digite seu termo de busca"
+                />
+                <button>Pesquisar</button>
+            </form>
+            <p>Segunda opção:</p>
+            <form action="">
+                <label for="">Pesquisar pelo ID</label>
+                <input
+                    type="search"
+                    name="q"
+                    size="30"
+                    pattern="[0-9]{2}"
+                    title="Digite o numero do Id com dois algarismos"
+                />
+                <button>Pesquisar</button>
+            </form>
+            <h3>Input type = number</h3>
+            - entrada de números
+            <h4># Atributos</h4>
+            - min/ max <br />
+            - step <br />
+            <p></p>
+            <form action="">
+                <input
+                    type="number"
+                    min="2"
+                    max="4"
+                    step="3"
+                    placeholder="Digite somente números"
+                />
+                <button>Enviar</button>
+                <h3>Input type = range</h3>
+                - controle para selecionar um valor numérico <br />- slider ou
+                dial control
+                <h4># Atributos</h4>
+                - min / max <br />- step <br />
+                <p></p>
+                <input type="range" min="0" max="20" step="5" />
+            </form>
         </main>
     </body>
 </html>
